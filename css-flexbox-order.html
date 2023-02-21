@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-flexbox-order</title>
+
+    <style>
+        .container{
+            width:300px;
+            height: 50px;
+            background-color: wheat;
+            margin: 50px auto 0;
+            padding: 10px;
+            border:3px solid black;
+            text-align: center;
+            grid-gap:5px;
+            display: flex;
+
+            
+            }
+
+            .a{background: rgb(204, 90, 90);order: 2;}
+            .b{background: rgb(96, 153, 94);
+               
+            }
+            .c{background: rgb(160, 69, 221);order: -2;}
+            .d{background: rgb(146, 184, 57);
+            }
+           
+            .e{background: rgb(173, 134, 134);}
+            .f{background: rgb(94, 211, 90);}
+            .g{background: rgb(204, 184, 218);}
+            .h{background: rgb(174, 245, 9);} 
+
+
+
+    </style>
+</head>
+<body>
+    <h1>css-flexbox ------order ( vertical alignment)</h1>
+
+    <div class="container">
+        <div class="a">one</div>
+        <div class="b">two</div>
+        <div class="c">three</div>
+        <div class="d">four</div>
+        <div class="e">one1</div>
+        <div class="f">two2</div>
+        <div class="g">three3</div>
+        <div class="h">four4</div>
+   </div>    
+</body>
+</html>

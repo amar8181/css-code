@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>css-grid-order</title>
+
+    <style>
+        .container{
+           
+            background-color: #eee;
+            width: 700px;
+            margin:70px 0 0 50px;
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 150px 100px ;
+            
+
+            grid-auto-rows: 80px;
+        }
+
+        .a{background: orange;}
+        .b{background: rgb(152, 168, 119);order: 2;}
+        .c{background: rgb(119, 179, 207);order: 1;}
+        .d{background: rgb(190, 151, 151);}
+        .e{background: rgb(105, 187, 125);}
+        .f{background: rgb(100, 101, 102);order: 5;}
+        
+    </style>
+
+</head>
+<body>
+
+   <h1>css-grid-order</h1>
+    <div class="container">
+        <div class="a">1</div>
+        <div class="b">2</div>
+        <div class="c">3</div>
+        <div class="d">4</div>
+        <div class="e">5</div>
+        <div class="f">6</div>
+    </div>
+    
+
+</body>
+</html>

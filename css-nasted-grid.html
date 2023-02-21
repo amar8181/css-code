@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width:700px;
+            background-color: wheat;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,150px);
+            grid-gap: 10px;
+        }
+
+            .a{background-color: rgb(47, 107, 160);}
+            .b{background-color: rgb(160, 47, 94);}
+
+            .c{background-color: rgb(47, 160, 94);color: red;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,);
+            grid-gap: 10px;}
+            
+            .d{background-color: rgb(160, 79, 47);}
+
+            .E{background-color: rgb(184, 169, 197);}
+            .F{background-color: rgb(180, 209, 192);}
+            .G{background-color: rgb(182, 133, 166);}
+
+    </style>
+</head>
+<body>
+    <h1>css-nasted-grid</h1>
+
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c">
+            <div class="E">E</div>
+            <div class="F">F</div>
+            <div class="G">G</div>
+        </div>
+        <div class="d"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>css-grid-alining-items</title>
+
+    <style>
+
+        .container{
+            background-color: #eee;
+            width: 80%;
+            margin:70px 0 0 50px;
+            
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:repeat(2, 120px) ;
+             grid-gap:20px;
+
+           
+                    grid-auto-flow:rows ;
+                    grid-auto-rows: 80px;
+
+                    /* align-items:start; */
+                    /* align-items:ends;
+                    align-items:center;
+                    align-items: stretch; */
+                    /* justify-items: center; */
+                    /* justify-items: start;
+                    justify-items: end;
+                    justify-items: stretch; */
+                    place-items: start center;
+
+                            
+        }
+
+        .a{
+            background: orangered;
+        }
+
+        .b{
+            background: rgb(129, 223, 41);
+            align-self: center;
+            justify-self: center;
+        }
+
+        .c{
+            background: rgb(25, 171, 190);
+            grid-row: span 3;
+             align-self: end; 
+             justify-self: start;
+      }
+
+        .d{
+            background: rgb(178, 156, 236);
+    }
+
+        .e{
+            background: rgb(190, 52, 167);
+     }
+
+        .f{
+            background: rgb(192, 133, 133);
+      }
+
+        .g{
+            background-color: burlywood;
+            align-self: center;
+            grid-column: span 2;
+       }
+
+       .i{
+        background-color: aqua;
+        /* justify-self: end; */
+        place-self: start end;
+
+       }
+    </style>
+</head>
+<body>
+    
+
+        <h1>css-grid-alining-items</h1>
+
+    <div class="container">
+        <div class="a">header </div>
+        <div class="b">menu</div>
+        <div class="c">box1</div>
+        <div class="d">box2 </div>
+        <div class="e">sidebar</div>
+        <div class="f">content</div>
+        <div class="g">footer</div>
+        <div class="i">other</div>
+    </div>
+</body>
+</html> 

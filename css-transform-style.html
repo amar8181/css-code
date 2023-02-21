@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>CSS-transform-style</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            .a{
+                height: 250px;
+                width: 350px;
+                background: rgb(133, 112, 67);
+                font-size: 18px;
+                text-align: center;
+                margin: 100px 0 0 100px;
+                perspective:800px;
+                transform: rotateY(30deg);
+                transform-style: preserve-3d;
+            }
+
+            #b{
+                width: 350px;
+                height: 250px;
+                background: tomato;
+                transform: rotateX(60deg);
+                transform-origin: bottom;
+            }
+           
+        </style>
+    </head>
+
+    <body>
+        <h1>cSS-transform-style</h1>
+
+        <div class="a">
+
+            <div id="b">usd services</div>
+
+        </div>
+
+    </body>
+</html>

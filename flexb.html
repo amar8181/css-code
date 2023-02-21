@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>flex</title>
+<style>
+    body{ box-sizing: content-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main{
+         background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main div{
+        /* display: inline-block; */
+        padding: 3.4%;
+        width: 43%;
+        border:1px solid red;
+        flex-grow: 1;
+    }
+     /* .a{
+        background: yellow;  
+    }
+    .b{
+        background: pink;
+    }
+    .c{
+        background: lightgreen;
+        flex-grow: 2;
+    } */
+</style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="a"> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. </div>
+        <div class="b"> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. </div>
+        <div class="c"> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. </div>
+    </div>
+</body>
+</html>

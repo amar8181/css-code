@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>css-grid-auto-fill & auto-fit</title>
+
+    <style>
+
+        .container{
+            background-color: #eee;
+            width: 600px;
+           
+            margin:70px 0 0 50px;
+            text-align: center;
+            color: azure;
+            
+            display: grid;
+            grid-template-columns:repeat(auto-fit, 100px);
+            /* grid-template-columns:repeat(auto-fill, 100px); */
+            grid-template-rows:repeat(2 , 110px) ;
+            /* grid-template-rows:repeat(auto-fit , 110px) ;
+            grid-template-rows:repeat(auto-fill , 110px) ;
+            grid-gap:10px; */
+           
+
+       
+                            
+        }
+
+        .a{
+            background: orangered;
+        }
+
+        .b{
+            background: rgb(129, 223, 41);
+            
+        }
+
+        .c{
+            background: rgb(25, 171, 190);
+            
+             
+      }
+
+        .d{
+            background: rgb(178, 156, 236);
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    
+
+        <h1>css-grid-auto-fill & auto-fit</h1>
+
+    <div class="container">
+        <div class="a">header </div>
+        <div class="b">menu</div>
+        <div class="c">box1</div>
+        <div class="d">box2 </div>
+    </div>
+</body>
+</html> 

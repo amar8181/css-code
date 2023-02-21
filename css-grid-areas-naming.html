@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-grid-areas-naming</title>
+
+    <style>
+
+        .container{
+            background-color: #eee;
+            width: 700px;
+            margin:70px 0 0 50px;
+            
+            display: grid;
+            /* grid-template-columns: 150px 200px auto; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 120px 60px 100px 400px 50px;
+             grid-gap:20px 25px;
+
+            grid-template-areas: "header header header"
+                                "menu menu menu"
+                                "box1 box2 sidebar"
+                                "content content sidebar"
+                                "footer footer footer";
+                            
+        }
+
+        .a{
+            background: orangered;
+           grid-area: header;
+         
+        }
+
+        .b{
+            background: rgb(129, 223, 41);
+           grid-area: menu;
+            
+        }
+
+        .c{
+            background: rgb(25, 171, 190);
+             grid-area: box1;
+          
+        }
+
+        .d{
+            background: rgb(87, 56, 172);
+             grid-area: box2;
+        }
+
+        .e{
+            background: rgb(190, 52, 167);
+            grid-area: sidebar;
+        }
+
+        .f{
+            background: rgb(192, 133, 133);
+             grid-area: content;
+        }
+
+        .g{
+            background-color: burlywood;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    
+
+        <h1>css-grid-areas-naming</h1>
+
+    <div class="container">
+        <div class="a">header</div>
+        <div class="b">menu</div>
+        <div class="c">box1</div>
+        <div class="d">box2</div>
+        <div class="e">sidebar</div>
+        <div class="f">content</div>
+        <div class="g">footer</div>
+    </div>
+</body>
+</html> 

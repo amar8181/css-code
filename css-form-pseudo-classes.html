@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>form-pseudo-classes-selector</title>
+        <style>
+            /* body{
+                background-color: rgb(211, 226, 221);
+             
+            } */
+            /* div{
+                background-color: blueviolet;
+                
+                width: 100%;
+                
+            } */
+
+            input[type='text']:required{
+                border: 2px solid rgb(163, 23, 128);
+                background: lime;
+            }
+
+            input[type='checkbox']:checked{
+                box-shadow: 0 0 0 3px red;
+            }
+
+            input[type='radio']:checked{
+                box-shadow: 0 0 0 3px red; }
+
+            form{
+                text-align: center;
+                align-items: center;
+                border: 2px solid white;
+                width: 50%;
+                padding: 20px;
+                box-sizing: border-box;
+                font-size: 20px;
+                font-family: sans-serif;
+               color: blue;
+                margin-top: -10px;
+            }
+        </style>
+    </head>
+    <body>
+      <div> <form action="css-user-select.html">
+           First Name: <input type="text" required><br><br>
+
+           Last Name: <input type="text" required><br><br>
+
+           Your Age: <input type="number" required><br><br>
+
+           Your E-mAil-id: <input type="mail" name="mail" required><br><br>
+
+           Your Hobbies: <input type="checkbox" > Sports.
+                         <input type="checkbox">Music
+                         <input type="checkbox">Travelellng
+                         <input type="checkbox">Books Reading <br><br>
+
+           Your Gender: <input type="radio" name="gender" id=""> Male 
+                        <input type="radio" name="gender"> Female <br><br>
+                        
+           Your Country: <select name="" id="">
+                            <option value="none">Select</option>
+                            <option value="">america</option>
+                            <option value="">india</option>
+                            <option value="">nepal</option>
+                            <option value="">shrilanka</option>
+                            <option value="">bhutan</option>
+                        </select>
+                        <br><br>
+                      <input type="reset" name="" value="reset"> 
+                      <input type="submit" name="" value="submit">
+
+        </form>
+    </div> 
+    </body>
+</html>

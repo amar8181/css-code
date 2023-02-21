@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title> attribute-function</title>
+
+    <style>
+            p{
+                color: green;
+                background-color: yellow;
+            }
+
+        p:hover::after{
+            content: attr(data-caption);
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>attr()-function</h1>
+
+<p class="test" data-caption="SERVICES">USD </p>
+</body>
+
+</html>

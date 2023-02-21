@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>CSS-animation</title>
+
+       <style>
+
+        body{
+            font-family: Arial, Helvetica;
+            background: white;
+        }
+
+        #a{
+            border: 1px solid rgb(204, 166, 166);
+            background: tomato;
+            color: blueviolet;
+            height: 500px;
+            position: absolute;
+            width: 500px;
+            top: 20%;
+            left: 10%;
+            font-size: 50px;
+            text-align: center;
+            line-height: 500px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            animation-name: sample;
+            animation-duration: 2s;
+            animation-timing-function: steps(6);
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+            /* animation: sample 2s infinite alternate; */
+        }
+/*         
+        @keyframes sample {
+            from{ border-radius: 0%; }
+            to{border-radius: 50%;background-color: rgb(194, 125, 46);color: rgb(37, 196, 77);}
+        } */
+
+         @keyframes sample {
+            0%{ border-radius: 0%; }
+           100% {border-radius: 50%;background-color: rgb(194, 125, 46);color: rgb(37, 196, 77)}
+        } 
+       </style>
+    </head>
+    <body>
+        
+        <h1>CSS-animation</h1>
+
+        <div id="a">usd services</div>
+    </body>
+</html>

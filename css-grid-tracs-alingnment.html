@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>css-grid-tracs-alignment</title>
+
+    <style>
+
+        .container{
+            background-color: #eee;
+            width: 700px;
+            height: 700px;
+            margin:70px 0 0 50px;
+            text-align: center;
+            color: azure;
+            
+            display: grid;
+            grid-template-columns:repeat(2, 150px);
+            grid-template-rows:repeat(2, 110px) ;
+            grid-gap:10px;
+            grid-auto-flow:rows dense;
+            grid-auto-rows: 80px;
+
+            /* justify-content: center;
+            justify-content: end; */
+            /* justify-content: start; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+                 justify-content: space-evenly;
+
+                 
+            /* align-content: center; */
+             /* align-content: end;  */
+            /* align-content: start; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+                align-content: space-evenly;
+
+                            
+        }
+
+        .a{
+            background: orangered;
+            /* text-align: center; */
+        }
+
+        .b{
+            background: rgb(129, 223, 41);
+            
+        }
+
+        .c{
+            background: rgb(25, 171, 190);
+            grid-row: span 3;
+             
+      }
+
+        .d{
+            background: rgb(178, 156, 236);
+    }
+
+        .e{
+            background: rgb(190, 52, 167);
+     }
+
+        .f{
+            background: rgb(192, 133, 133);
+      }
+
+        .g{
+            background-color: burlywood;
+            grid-column: span 2;
+       }
+
+       .i{
+        background-color: rgb(29, 48, 48);
+        }
+
+        .j{
+        background-color: rgb(170, 66, 80);
+        }
+    </style>
+</head>
+<body>
+    
+
+        <h1>css-grid-tracs-aliningment</h1>
+
+    <div class="container">
+        <div class="a">header </div>
+        <div class="b">menu</div>
+        <div class="c">box1</div>
+        <div class="d">box2 </div>
+        <div class="e">sidebar</div>
+        <div class="f">content</div>
+        <div class="g">footer</div>
+        <div class="i">other</div>
+        <div class="j"><h2 align="center" style="color: white;">extra</h2></div>
+    </div>
+</body>
+</html> 

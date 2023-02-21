@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>css-grid-minmax-function</title>
+
+    <style>
+
+        .container{
+            background-color: #eee;
+            width: 80%;
+            margin:70px 0 0 50px;
+            
+            display: grid;
+            grid-template-columns:minmax(150px, 300px)  1fr 1fr min-content;
+            grid-template-rows:repeat(2, minmax(150px, min-content));
+             grid-gap:20px;
+
+                            
+        }
+
+        .a{
+            background: orangered;
+           
+        }
+
+        .b{
+            background: rgb(129, 223, 41);
+        }
+
+        .c{
+            background: rgb(25, 171, 190);
+      }
+
+        .d{
+            background: rgb(178, 156, 236);
+    }
+
+        .e{
+            background: rgb(190, 52, 167);
+     }
+
+        .f{
+            background: rgb(192, 133, 133);
+      }
+
+        .g{
+            background-color: burlywood;
+       }
+
+       .i{
+        background-color: aqua;
+       }
+    </style>
+</head>
+<body>
+    
+
+        <h1>css-grid-minmax-function()</h1>
+
+    <div class="container">
+        <div class="a">header Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, distinctio?</div>
+        <div class="b">menu</div>
+        <div class="c">box1</div>
+        <div class="d">box2 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+        <div class="e">sidebar</div>
+        <div class="f">content</div>
+        <div class="g">footer</div>
+        <div class="i">other</div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>css-grid-auto-fill & auto-fit</title>
+
+    <style>
+
+        .container{
+            background-color: #eee;
+            width: 650px;
+           
+            margin:70px 0 0 50px;
+            text-align: center;
+            color: azure;
+            
+            display: grid;
+            grid-template-columns:fit-content(200px) fit-content(300px) 1fr;
+            grid-template-rows:repeat(2, minmax(100px,min-content)) ;
+           
+        }
+
+        .a{background: orangered; }
+        .b{background: rgb(129, 223, 41)}
+        .c{background: rgb(195, 204, 116); }
+        .d{background: rgb(68, 30, 172);    }
+        .e{background: rgb(29, 211, 59);    }
+        .f{background: rgb(51, 177, 160);    }
+      
+
+    </style>
+</head>
+<body>
+    
+
+        <h1>css-grid-auto-fill & auto-fit</h1>
+
+    <div class="container">
+        <div class="a">header Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex explicabo eligendi animi sit, aperiam veniam nam quia non ducimus. Fugiat, sunt adipisci mollitia possimus laudantium nostrum sequi omnis, suscipit ullam, nisi itaque! Dolor sunt voluptas earum animi odio fugit, velit repellat delectus expedita perferendis esse reiciendis quia. Voluptas aut numquam distinctio consectetur, repellat assumenda nisi illum exercitationem earum temporibus voluptatibus? Quod consequatur voluptatum nesciunt totam sequi labore adipisci consequuntur iste libero aut nihil commodi dolorum ab, voluptate, omnis repudiandae dicta reprehenderit cumque veritatis iure, nobis sunt? Porro ex quasi ipsam, animi quos minima consequatur, impedit in, nisi doloribus quaerat.</div>
+        <div class="b">menu Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore, explicabo expedita veniam iure vero? Quas totam sint rem excepturi quo tempora numquam dicta aperiam alias placeat cum natus unde aspernatur nihil eaque quisquam eius magni, mollitia assumenda? Nisi ducimus officia molestias ea excepturi accusamus atque omnis, natus alias dolore odio doloremque, est voluptas fugit nesciunt consequuntur? Officiis iure eveniet sed molestiae autem veritatis cumque voluptate consequatur voluptates, soluta modi iste? Aperiam, quia corrupti? Inventore dolor perferendis ad? Modi pariatur veritatis nobis quibusdam doloremque unde, a, blanditiis dignissimos libero iste expedita, explicabo consequuntur quaerat illum voluptate magnam non! Dolorum, nihil!</div>
+        <div class="c">box1</div>
+        <div class="d">box2 </div>
+        <div class="e">box3 </div>
+        <div class="f">box4 </div>
+    </div>
+</body>
+</html> 

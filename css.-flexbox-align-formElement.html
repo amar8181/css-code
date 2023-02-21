@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-flexbox-align-form-element</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica; }
+            h1{padding: 0 0 0 40px;}
+       
+    #a{
+        background: rgb(214, 185, 185);
+        list-style: none;
+        margin: 50px;
+        padding: 20px;
+    }
+
+    #a li{
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px 0;
+    }
+
+    #a li label{
+        flex-grow: 1;
+    }
+
+    
+    @media screen and (min-width:300px) {
+    #a li input{
+        flex-grow: 2;
+    }
+}
+
+    @media screen and (min-width:300px) and (max-width:499px) {
+    #a li {
+        flex-direction: column;
+    }
+}
+
+    
+    @media screen and (min-width:500px) {
+    #a li input{
+        flex-grow: 3;
+    }
+}
+
+    
+    @media screen and (min-width:768px) {
+    #a li input{
+        flex-grow: 4;
+    }
+}
+
+    @media screen and (min-width:992px) {
+    #a li input{
+        flex-grow: 6;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #a li input{
+        flex-grow: 8;
+    }
+}
+</style>
+</head>
+
+<body>
+    <h1>css- align form with flexbox</h1>
+    
+    <form action="">
+        <ul id="a">
+            <li>
+                <label for="">Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="">Class Name</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="">email address</label>
+                <input type="text">
+            </li>
+           <button  type="submit">save</button>
+                </li>
+        </ul>
+    </form>
+</body>
+</html>

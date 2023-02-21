@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>pseudo-element-selectors</title>
+    </head>
+
+    <style>
+        body{
+            font-weight: 100;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 0 0 20px;
+        }
+
+
+        p::before{
+            content: "hello" ;
+            background-color: red;
+            color: white;
+        }
+
+        p::after{
+            content: "world" ;
+            background-color: green;
+            color: white;
+        }
+        
+    </style>
+    <body>
+        <h1>
+            pseudo-element-selectors
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p> 
+
+    </body>
+</html>

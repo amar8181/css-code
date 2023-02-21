@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css project 4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: rgb(205, 228, 104);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-image: url(/medicinal-plant-1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        .header {
+            height: 202px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        .logo img {
+            height: 150px;
+            margin-top: 5px;
+            margin-left: 20px;
+            opacity: 0.5;
+            border-radius: 10px;
+        }
+        .nav a {
+            font-size: 20px;
+            color: aliceblue;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .nav {
+            display: inline-block;
+            margin: 0 20px 0 10px;
+        }
+        .title {
+            font-family: 'Rubik Moonrocks', cursive;
+            font-size: 20px;
+            color: rgb(157, 255, 44);
+            text-shadow: 1px 1px 10px rgb(19, 22, 20);
+        }
+        marquee {
+            color: rgb(133, 67, 105);
+            line-height: 80px;
+            font-size: 40px;
+            background: lightgoldenrodyellow;
+        }
+        .sec {
+            margin: 20px;
+            height: auto;
+        }
+        section {
+            background-image: url(/tulsi1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -24px;
+            height: 250px;
+        }   
+        .sec p {
+            display: inline-block;
+            color: bisque;
+            font-size: 20px;
+            text-shadow: 4px 4px 4px rgb(228, 80, 11);
+        }
+        .sec h2 {
+            display:block;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            text-shadow: 1px 1px 2px red;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .main .card-menu img {
+            height: 150px;
+            width: 100%;
+            border-radius: 50%;
+        }
+        .main .card {
+            border-radius: 15px;
+            padding: 10px;
+            margin: 5px;
+            height: auto;
+            width: 439px;
+            background: rgb(235, 192, 135);
+        }
+        .main .card .card-header h3{
+            color: rgb(20, 34, 20);
+        }
+        h5{
+            background-color:rgb(16, 101, 129); 
+            font-size: 30px;
+            line-height: 50px;
+            border-radius: 10px;
+            color: white ; 
+            text-align: center;
+         }
+ 
+        @media screen and (max-width: 375px) {
+            .nav {
+                    display: inline-block;
+                    margin: 0 15px 0 76px;
+                }
+                marquee {
+                    color: rgb(133, 67, 105);
+                    line-height: 45px;
+                    font-size: 29px;
+                    background: lightgoldenrodyellow;
+                }
+                .sec h2 {
+                    display: block;
+                    color: white;
+                    font-size: 21px;
+                    text-align: center;
+                    text-shadow: 1px 1px 2px red;
+                    padding: 10px;
+                    border: 1px solid transparent;
+                }
+                section {
+                        background-image: url(/tulsi1.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-top: -24px;
+                        height: 742px;
+                    }
+                .main .card {
+                        padding: 10px;
+                        margin: 5px;
+                        box-shadow: 1px 1px 10px 3px grey;
+                        height: auto;
+                        width: 364px;
+                    }
+                    h5 {
+                        background-color: rgb(16, 101, 129);
+                        font-size: 13px;
+                        line-height: 50px;
+                        border-radius: 10px;
+                        color: white;
+                        text-align: center;
+                    }
+         }
+           
+        @media screen and (max-width: 390px) {
+            section{
+                height: 742px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+          section {
+                height: 755px;
+            }
+        }
+
+        @media screen and (max-width: 820px) {
+            section{
+                height: 715px;
+            }
+            .sec p {
+                font-size: 30px;
+            }
+            .main .card{
+                width: 810px;
+            }
+        }
+        
+        @media screen and (max-width: 912px) {
+            section{
+                height: 330px;
+            }
+        }
+ 
+        @media screen and (max-width: 1024px) {
+            section{
+                height: 335px;
+            }
+            .main .card{
+                width: 502px;
+            }
+        } 
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+
+            <!-- <div class="logo"><img src="/usdservices-logo.jpg" alt="">
+            </div> -->
+ 
+            <div class="title">
+                <h1>GREEN USD</h1>
+            </div>
+
+            <div class="nav">
+                <a href="">HOME</a>
+                <a href="">ABOUT US</a>
+                <a href="">GALLARY</a>
+                <a href="">CONTACT</a>
+            </div>
+
+        </div>
+    </header>
+
+    <marquee behavior="scroll" direction="left" scrollamount="10"> Better Environment, Better Tomorrow. Save the planet
+        Earth. Let us make our planet a better place</marquee>
+
+    <section>
+        <div class="sec">
+            <h2>Welcome To AYURVEDA</h2>
+            <p>
+                <i> Traditional Indian medicine (ayurveda) is becoming increasingly popular,
+                    with many chronic conditions responding to it well. Most patients begin to take conventional
+                    medications as soon as their diagnoses are made, so ayurvedic treatments are usually undergone
+                    alongside and/or after conventional medical approaches. A detailed knowledge of the action of food,
+                    spices, and medicinal plants is needed in order to understand their potential influence fully.
+                    While societal use of ayurvedic plants and Indian spices is commonplace, without ill effect,
+                    the use of more concentrated products made from single plants, often in the form of teas or tablets,
+                    is of more concern. The mechanisms by which polyherbal drugs and their extracts act differ in many
+                    respects from the actions of single substances or synthetic drugs. Despite the fact that ayurvedic
+                    medicines are
+                    based on natural herbal materials, their safety depends on their method of administration, taking
+                    into account individuals' needs and their specific disease conditions.
+                </i>
+            </p>
+        </div>
+    </section>
+
+    <div class="main">
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Aloe Vera</h3>
+            </div>
+            <div class="card-menu">
+                <img src="alovera.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                Aloe is a cactus-like plant that grows in hot, dry climates. It is cultivated in subtropical regions
+                around the world, including the southern border areas of Texas, New Mexico, Arizona, and California.
+                Historically, aloe has been used for skin conditions and was thought to improve baldness and promote
+                wound healing.
+
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Ashwagandha</h3>
+            </div>
+            <div class="card-menu">
+                <img src="/ashwagandha.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                Ashwagandha (Withania somnifera) is a small woody plant native to India and North Africa. Its root and
+                berries are used to produce a very popular Ayurvedic remedy (2Trusted Source).
+                It’s considered an adaptogen, which means that it’s believed to help your body manage stress more
+                effectively. Research has shown that it reduces levels of cortisol, a hormone that your adrenal glands
+                produce in response to stress
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Shatawari</h3>
+            </div>
+            <div class="card-menu">
+                <img src="/shatavari.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                Shatavari is also known as Asparagus racemosus. It’s a member of the asparagus family. It’s also an
+                adaptogenic herb. Adaptogenic herbs are said to help your body cope with physical and emotional stress.
+                Shatavari is considered a general health tonic to improve vitality, making it a staple in ayurvedic
+                medicine. Keep reading to learn more about the other health benefits it may offer.
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Termaric-(Haldi)</h3>
+            </div>
+            <div class="card-menu">
+                <img src="/termaric.webp" alt="">
+            </div>
+            <div class="card-footer">
+                Turmeric, the spice that gives curry its characteristic yellow color, is another popular Ayurvedic
+                remedy.
+                Curcumin, its main active compound, has powerful antioxidant and anti-inflammatory properties. Test-tube
+                research shows that it may be equally or even more effective than some anti-inflammatory drugs — without
+                all of their side effects (58Trusted Source, 59Trusted Source, 60Trusted Source, 61Trusted Source).
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Triphala</h3>
+            </div>
+            <div class="card-menu">
+                <img src="/triphala.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                Test-tube and animal studies show that triphala may reduce inflammation caused by arthritis, as well as
+                prevent or limit the growth of certain types of cancer (27Trusted Source, 28Trusted Source, 29Trusted
+                Source, 30Trusted Source, 31Trusted Source).
+
+                It may also function as a natural laxative, reducing constipation, abdominal pain, and flatulence while
+                improving the frequency and consistency of bowel movements in people with gut disorders (32Trusted
+                Source, 33).
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Tulsi</h3>
+            </div>
+            <div class="card-menu">
+                <img src="tulsi11.jpeg" alt="">
+            </div>
+            <div class="card-footer">
+                Tulsi is cultivated for religious and traditional medicine purposes, and also for its essential oil. It
+                is widely used as a herbal tea, commonly used in Ayurveda, and has a place within the Vaishnava
+                tradition of Hinduism, in which devotees perform worship involving holy basil plants or leaves.
+            </div>
+        </div>
+    </div>
+
+    <h5> @ 2022 USD Services Private Limited - All rights reserve .</h5>
+</body>
+
+</html>

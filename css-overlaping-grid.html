@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-grid-overlapping</title>
+
+    <style>
+        .container{
+            width:300px;
+            background-color: wheat;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(2,150px);
+        }
+        .item{
+            max-width: 150px;
+        }
+
+            .itema{
+                background-color: rgb(47, 107, 160);
+             grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+            align-self: start;
+            z-index: 3;
+            }
+
+            .itemb{background-color: rgb(160, 47, 94);
+                grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 1;
+            }
+
+            .itemc{background-color: rgb(160, 79, 47);
+                grid-column: 1/ span 2;
+            grid-row: 1/ span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 2;
+            }
+
+
+    </style>
+</head>
+<body>
+    <h1>css-grid-overlapping</h1>
+
+    <div class="container">
+        <div class="item itema">A Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam asperiores distinctio doloribus molestias reprehenderit, alias commodi consequatur illo quo voluptatem.</div>
+        <div class="item itemb">B Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit. Nesciunt sed accusamus voluptatum quasi quisquam, deleniti dolores dolorem ipsum!</div>
+         <div class="item itemc">C Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veritatis placeat dolorum repellendus ab aspernatur libero esse id odit itaque!</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-grid-lines-naming</title>
+
+    <style>
+
+        .container{
+            background-color: #eee;
+            width: 700px;
+            margin:70px 0 0 50px;
+            
+            display: grid;
+            grid-template-columns: [a-start]250px[a-end b-start] 200px[b-end c-start] auto[c-end];
+            grid-template-rows: [r1-start]150px[r1-end r2-start]  120px[r2-end r3-start] 120px[r3-end r4-start] 120px[r4-end];
+            
+            grid-gap:20px 25px;
+
+            
+        }
+
+        .a{
+            background: orangered;
+
+         grid-row-start: 2;
+         grid-row-end: 3;
+         grid-column-start: 3;
+         grid-column-end: 4;
+         z-index: 1;
+        }
+
+        .b{
+            background: rgb(129, 223, 41);
+            grid-row: 2/span 3;
+            
+        }
+
+        .c{
+            background: rgb(25, 171, 190);
+            grid-column:2/-1;
+        }
+
+        .d{
+            background: rgb(87, 56, 172);
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .e{
+            background: rgb(190, 52, 167);
+        }
+
+        .f{
+            background: rgb(192, 133, 133);
+             grid-row-start: 1;
+         grid-row-end: 2;
+         grid-column-start: 1;
+         grid-column-end:span 3;
+        }
+    </style>
+</head>
+<body>
+
+        <h1>css-grid-lines-naming</h1>
+
+    <div class="container">
+        <div class="a">first</div>
+        <div class="b">second</div>
+        <div class="c">third</div>
+        <div class="d">fourth</div>
+        <div class="e">fifth</div>
+        <div class="f">sixth</div>
+    </div>
+</body>
+</html> 

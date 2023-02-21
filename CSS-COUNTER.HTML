@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css-counter</title>
+    <style>
+
+        body{
+            font: 50px;padding: 10px 0 0 20px;
+            counter-reset: my-counter 0;
+        }
+
+        h2::before{
+            content: 'chapter ' counter(my-counter) " : " ;
+            counter-increment: my-counter 2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="border: 1px solid red;">css-counter-increment and reset</h1>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto maxime blanditiis, vitae corrupti deleniti hic ipsam reprehenderit cumque molestias, consequuntur distinctio nobis voluptatibus nihil? Molestiae!</p>
+
+   
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto maxime blanditiis, vitae corrupti deleniti hic ipsam reprehenderit cumque molestias, consequuntur distinctio nobis voluptatibus nihil? Molestiae!</p>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto maxime blanditiis, vitae corrupti deleniti hic ipsam reprehenderit cumque molestias, consequuntur distinctio nobis voluptatibus nihil? Molestiae!</p>
+
+    
+</body>
+</html>
